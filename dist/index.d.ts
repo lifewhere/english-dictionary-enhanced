@@ -2,4 +2,9 @@
 
 export interface Pointer {
 	symbol: string;
-	offse
+	offset: number;
+	pos: string;
+}
+export interface Data {
+	offset: number;
+	pos: string
