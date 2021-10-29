@@ -7,4 +7,8 @@ export interface Pointer {
 }
 export interface Data {
 	offset: number;
-	pos: string
+	pos: string;
+	wordCount: number;
+	words: string[];
+	pointerCnt: number;
+	poi
