@@ -11,4 +11,8 @@ export interface Data {
 	wordCount: number;
 	words: string[];
 	pointerCnt: number;
-	poi
+	pointers: Pointer[];
+	glossary: string[];
+	isComment: boolean;
+}
+export
