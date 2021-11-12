@@ -15,4 +15,8 @@ export interface Data {
 	glossary: string[];
 	isComment: boolean;
 }
-export
+export interface Index {
+	lemma: string;
+	pos: string;
+	offsetCount: number;
+	offsets: num
