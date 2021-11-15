@@ -19,4 +19,8 @@ export interface Index {
 	lemma: string;
 	pos: string;
 	offsetCount: number;
-	offsets: num
+	offsets: number[];
+	offsetData: Data[];
+	pointerCount: number;
+	pointers: Pointer[];
+	senseCo
