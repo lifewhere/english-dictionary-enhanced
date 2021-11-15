@@ -23,4 +23,9 @@ export interface Index {
 	offsetData: Data[];
 	pointerCount: number;
 	pointers: Pointer[];
-	senseCo
+	senseCount: number;
+	tagSenseCount: number;
+	isComment: boolean;
+}
+declare class Database {
+	pat
