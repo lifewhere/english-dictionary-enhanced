@@ -31,4 +31,6 @@ declare class Database {
 	path: string;
 	isReady: boolean;
 	index: Index[];
-	indexLemmaIndex:
+	indexLemmaIndex: Map<string, Map<string, Index>>;
+	indexOffsetIndex: Map<number, Index[]>;
+	
