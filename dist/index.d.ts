@@ -33,4 +33,6 @@ declare class Database {
 	index: Index[];
 	indexLemmaIndex: Map<string, Map<string, Index>>;
 	indexOffsetIndex: Map<number, Index[]>;
-	
+	data: Data[];
+	dataOffsetIndex: Map<number, Data>;
+	dataLemmaIndex: Map<string, D
