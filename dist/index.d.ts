@@ -28,4 +28,7 @@ export interface Index {
 	isComment: boolean;
 }
 declare class Database {
-	pat
+	path: string;
+	isReady: boolean;
+	index: Index[];
+	indexLemmaIndex:
