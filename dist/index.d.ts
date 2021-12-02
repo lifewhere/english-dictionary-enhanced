@@ -35,4 +35,8 @@ declare class Database {
 	indexOffsetIndex: Map<number, Index[]>;
 	data: Data[];
 	dataOffsetIndex: Map<number, Data>;
-	dataLemmaIndex: Map<string, D
+	dataLemmaIndex: Map<string, Data[]>;
+	constructor(path: string);
+	init(): Promise<void>;
+	ready(): void;
+	addIndex
