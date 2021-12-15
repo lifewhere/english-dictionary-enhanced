@@ -39,4 +39,5 @@ declare class Database {
 	constructor(path: string);
 	init(): Promise<void>;
 	ready(): void;
-	addIndex
+	addIndex(index: Index): void;
+	static copyIndex(indexMap: Map<string, Index>): Map<st
