@@ -40,4 +40,5 @@ declare class Database {
 	init(): Promise<void>;
 	ready(): void;
 	addIndex(index: Index): void;
-	static copyIndex(indexMap: Map<string, Index>): Map<st
+	static copyIndex(indexMap: Map<string, Index>): Map<string, Index>;
+	indexLemmaSearch(query: string[]): Map<
