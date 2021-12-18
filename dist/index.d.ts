@@ -41,4 +41,5 @@ declare class Database {
 	ready(): void;
 	addIndex(index: Index): void;
 	static copyIndex(indexMap: Map<string, Index>): Map<string, Index>;
-	indexLemmaSearch(query: string[]): Map<
+	indexLemmaSearch(query: string[]): Map<string, Map<string, Index>>;
+	indexOffsetSearch(query: number[]): Map<Number,
