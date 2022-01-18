@@ -46,4 +46,7 @@ declare class Database {
 	addData(data: Data): void;
 	static copyData(data: Data): {
 		offset: number;
-		pos
+		pos: string;
+		wordCount: number;
+		words: string[];
+		pointerCnt: number;
