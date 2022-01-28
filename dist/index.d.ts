@@ -50,3 +50,7 @@ declare class Database {
 		wordCount: number;
 		words: string[];
 		pointerCnt: number;
+		pointers: Pointer[];
+		glossary: string[];
+		isComment: boolean;
+	};
