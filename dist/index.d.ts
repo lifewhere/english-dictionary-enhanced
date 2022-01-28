@@ -54,3 +54,5 @@ declare class Database {
 		glossary: string[];
 		isComment: boolean;
 	};
+	dataLemmaSearch(query: string[]): Map<string, Data[]>;
+	dataOffsetSearc
