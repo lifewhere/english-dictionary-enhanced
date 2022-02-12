@@ -55,4 +55,7 @@ declare class Database {
 		isComment: boolean;
 	};
 	dataLemmaSearch(query: string[]): Map<string, Data[]>;
-	dataOffsetSearc
+	dataOffsetSearch(query: number[]): Map<number, Data>;
+	getSize(): {
+		count: number;
+		indexes: num
