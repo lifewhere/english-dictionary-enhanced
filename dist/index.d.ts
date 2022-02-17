@@ -58,4 +58,10 @@ declare class Database {
 	dataOffsetSearch(query: number[]): Map<number, Data>;
 	getSize(): {
 		count: number;
-		indexes: num
+		indexes: number;
+	};
+}
+export interface SearchSimple {
+	lemma: string;
+	words: string;
+	meaning: 
