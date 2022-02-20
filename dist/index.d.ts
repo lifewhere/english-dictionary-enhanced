@@ -64,4 +64,9 @@ declare class Database {
 export interface SearchSimple {
 	lemma: string;
 	words: string;
-	meaning: 
+	meaning: string;
+}
+declare class Dictionary {
+	path: string;
+	database: Database;
+	constructor(path: st
