@@ -69,4 +69,6 @@ export interface SearchSimple {
 declare class Dictionary {
 	path: string;
 	database: Database;
-	constructor(path: st
+	constructor(path: string);
+	init(): Promise<void>;
+	searchFor(term: string[]): Map<string, Map<str
