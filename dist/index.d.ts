@@ -71,4 +71,6 @@ declare class Dictionary {
 	database: Database;
 	constructor(path: string);
 	init(): Promise<void>;
-	searchFor(term: string[]): Map<string, Map<str
+	searchFor(term: string[]): Map<string, Map<string, Index>>;
+	searchOffsetsInDataFor(offsets: number[]): Map<number, Data>;
+	searchSimpleFor(words:
