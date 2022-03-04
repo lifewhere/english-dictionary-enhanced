@@ -73,4 +73,5 @@ declare class Dictionary {
 	init(): Promise<void>;
 	searchFor(term: string[]): Map<string, Map<string, Index>>;
 	searchOffsetsInDataFor(offsets: number[]): Map<number, Data>;
-	searchSimpleFor(words:
+	searchSimpleFor(words: string[]): Map<string, Map<string, SearchSimple>>;
+	wordsStartingWith(pre
