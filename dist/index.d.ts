@@ -76,3 +76,5 @@ declare class Dictionary {
 	searchSimpleFor(words: string[]): Map<string, Map<string, SearchSimple>>;
 	wordsStartingWith(prefix: string): string[];
 	wordsEndingWith(suffix: string): string[];
+	wordsIncluding(word: string): string[];
+	wordsUsingAllCharactersFrom(query: string, 
