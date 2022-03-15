@@ -74,4 +74,5 @@ declare class Dictionary {
 	searchFor(term: string[]): Map<string, Map<string, Index>>;
 	searchOffsetsInDataFor(offsets: number[]): Map<number, Data>;
 	searchSimpleFor(words: string[]): Map<string, Map<string, SearchSimple>>;
-	wordsStartingWith(pre
+	wordsStartingWith(prefix: string): string[];
+	wordsEndingWith(suffix: string): string[];
