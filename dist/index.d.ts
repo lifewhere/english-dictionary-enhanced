@@ -77,4 +77,5 @@ declare class Dictionary {
 	wordsStartingWith(prefix: string): string[];
 	wordsEndingWith(suffix: string): string[];
 	wordsIncluding(word: string): string[];
-	wordsUsingAllCharactersFrom(query: string, 
+	wordsUsingAllCharactersFrom(query: string, ignorePhrases?: boolean): string[];
+	wordsWithCharsIn(query: string, priorityCharacters?: st
