@@ -79,4 +79,11 @@ declare class Dictionary {
 	wordsIncluding(word: string): string[];
 	wordsUsingAllCharactersFrom(query: string, ignorePhrases?: boolean): string[];
 	wordsWithCharsIn(query: string, priorityCharacters?: string): Map<string, Map<string, SearchSimple>>;
-	static hasAllCharsIn(word: string, test: str
+	static hasAllCharsIn(word: string, test: string): boolean;
+}
+
+export {
+	Dictionary as default,
+};
+
+export {};
