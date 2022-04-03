@@ -178,3 +178,68 @@ class Reader {
             reject();
           });
         });
+      });
+    });
+  }
+}
+var reader_default = Reader;
+
+// src/database/index.ts
+class Database {
+  path;
+  isReady;
+  index;
+  indexLemmaIndex;
+  indexOffsetIndex;
+  data;
+  dataOffsetIndex;
+  dataLemmaIndex;
+  constructor(path) {
+    this.isReady = false;
+    this.index = [];
+    this.indexLemmaIndex = new Map;
+    this.indexOffsetIndex = new Map;
+    this.data = [];
+    this.dataLemmaIndex = new Map;
+    this.dataOffsetIndex = new Map;
+    this.path = path;
+  }
+  async init() {
+    const reader2 = new reader_default(this);
+    await reader2.init();
+  }
+  ready() {
+    this.isReady = true;
+  }
+  addIndex(index) {
+    if (index.isComment) {
+      return;
+    }
+    this.index.push(index);
+    const existingIndicies = this.indexLemmaIndex.get(index.lemma);
+    if (existingIndicies) {
+      existingIndicies.set(index.pos, index);
+    } else {
+      this.indexLemmaIndex.set(index.lemma, new Map([[index.pos, index]]));
+    }
+    index.offsets.forEach((offset) => {
+      let output = [];
+      if (this.indexOffsetIndex.get(offset) !== undefined) {
+        output = this.indexOffsetIndex.get(offset);
+      }
+      output.push(index);
+      this.indexOffsetIndex.set(offset, output);
+    });
+  }
+  static copyIndex(indexMap) {
+    return new Map(indexMap);
+  }
+  indexLemmaSearch(query) {
+    const output = new Map;
+    query.forEach((lemma) => {
+      if (lemma !== "" && this.indexLemmaIndex.get(lemma) !== undefined) {
+        output.set(lemma, Database.copyIndex(this.indexLemmaIndex.get(lemma)));
+      }
+    });
+    return output;
+  }
