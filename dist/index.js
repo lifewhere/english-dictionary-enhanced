@@ -88,3 +88,93 @@ class DataLine {
       return this.line;
     }
     const glossarySplit = line.split("|");
+    if (glossarySplit.length > 1) {
+      glossarySplit[1].split(";").forEach((part) => {
+        this.line.glossary.push(part.trim());
+      });
+    }
+    const meta = glossarySplit[0].split(" ");
+    this.line.offset = parseInt(meta.shift(), 10);
+    const pos2 = meta.shift();
+    if (pos2 !== undefined && configs_default.pos.get(pos2) !== undefined) {
+      this.line.pos = configs_default.pos.get(pos2);
+    }
+    this.line.wordCount = parseInt(meta.shift(), 16);
+    for (let index = 0;index < this.line.wordCount; index += 1) {
+      const word = meta.shift();
+      if (word !== undefined) {
+        this.line.words.push(word.toLowerCase());
+      }
+    }
+    this.line.pointerCnt = parseInt(meta.shift(), 10);
+    for (let index = 0;index < this.line.pointerCnt; index += 1) {
+      const block = {
+        symbol: "",
+        offset: 0,
+        pos: ""
+      };
+      block.symbol = meta.shift();
+      block.offset = parseInt(meta.shift(), 10);
+      const pos3 = meta.shift();
+      const posValue = configs_default.pos.get(pos3);
+      if (posValue != null) {
+        block.pos = posValue;
+        const symbols = configs_default.pointerSymbols.get(pos3);
+        if (symbols !== undefined) {
+          const symbol = symbols.get(block.symbol);
+          if (symbol !== undefined) {
+            block.symbol = symbol;
+          }
+        }
+      }
+      meta.shift();
+      this.line.pointers.push(block);
+    }
+    return this.line;
+  }
+}
+var data_line_default = DataLine;
+
+// src/reader/index.ts
+var fileTypes = ["index", "data"];
+var wordTypes = ["adj", "adv", "noun", "verb"];
+
+class Reader {
+  db;
+  isReady;
+  readRemaining;
+  constructor(db) {
+    this.db = db;
+    this.isReady = false;
+    this.readRemaining = 8;
+  }
+  init() {
+    return new Promise((resolve, reject) => {
+      fileTypes.forEach((fileType) => {
+        wordTypes.forEach((wordType) => {
+          const file = `${this.db.path}/${fileType}.${wordType}`;
+          const readerInterface = readline.createInterface({
+            input: fs.createReadStream(file),
+            output: undefined
+          });
+          readerInterface.on("line", (line) => {
+            if (fileType === "index") {
+              const item = new index_line_default().parse(line);
+              this.db.addIndex(item);
+            } else {
+              const item = new data_line_default().parse(line);
+              this.db.addData(item);
+            }
+          });
+          readerInterface.on("close", () => {
+            this.readRemaining -= 1;
+            if (this.readRemaining === 0) {
+              this.isReady = true;
+              this.db.ready();
+              resolve("");
+            }
+          });
+          readerInterface.on("error", () => {
+            reject();
+          });
+        });
