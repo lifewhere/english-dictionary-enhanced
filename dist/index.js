@@ -243,3 +243,95 @@ class Database {
     });
     return output;
   }
+  indexOffsetSearch(query) {
+    const output = new Map;
+    query.forEach((offset) => {
+      if (offset && this.indexOffsetIndex.get(offset)) {
+        const items = [];
+        this.indexOffsetIndex.get(offset).forEach((item) => {
+          items.push({ ...item });
+        });
+        output.set(offset, items);
+      }
+    });
+    return output;
+  }
+  addData(data2) {
+    if (data2.isComment) {
+      return;
+    }
+    this.data.push(data2);
+    this.dataOffsetIndex.set(data2.offset, data2);
+    data2.words.forEach((word) => {
+      let output = [];
+      if (this.dataLemmaIndex.get(word)) {
+        output = this.dataLemmaIndex.get(word);
+      }
+      output.push(data2);
+      this.dataLemmaIndex.set(word, output);
+    });
+  }
+  static copyData(data2) {
+    return {
+      offset: data2.offset,
+      pos: data2.pos,
+      wordCount: data2.wordCount,
+      words: [...data2.words],
+      pointerCnt: data2.pointerCnt,
+      pointers: [...data2.pointers],
+      glossary: [...data2.glossary],
+      isComment: data2.isComment
+    };
+  }
+  dataLemmaSearch(query) {
+    const output = new Map;
+    query.forEach((lemma) => {
+      const items = [];
+      if (lemma !== "" && this.dataLemmaIndex.get(lemma)) {
+        this.dataLemmaIndex.get(lemma).forEach((item) => {
+          items.push(Database.copyData(item));
+        });
+      }
+      output.set(lemma, items);
+    });
+    return output;
+  }
+  dataOffsetSearch(query) {
+    const output = new Map;
+    query.forEach((offset) => {
+      if (offset && this.dataOffsetIndex.get(offset)) {
+        output.set(offset, Database.copyData(this.dataOffsetIndex.get(offset)));
+      }
+    });
+    return output;
+  }
+  getSize() {
+    return {
+      count: this.index.length + this.data.length,
+      indexes: this.indexOffsetIndex.size + this.indexLemmaIndex.size + this.dataOffsetIndex.size + this.dataLemmaIndex.size
+    };
+  }
+}
+var database_default = Database;
+
+// src/dictionary/index.ts
+class Dictionary {
+  path;
+  database;
+  constructor(path) {
+    this.path = path;
+    this.database = new database_default(this.path);
+  }
+  async init() {
+    await this.database.init();
+  }
+  searchFor(term) {
+    let output = new Map;
+    output = this.database.indexLemmaSearch(term);
+    output.forEach((lemmaMap, lemma) => {
+      lemmaMap.forEach((index) => {
+        const lemmaData = this.searchOffsetsInDataFor(index.offsets);
+        index.offsetData = [];
+        lemmaData.forEach((data2) => {
+          index.offsetData.push(data2);
+        });
