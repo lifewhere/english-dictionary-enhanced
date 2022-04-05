@@ -335,3 +335,85 @@ class Dictionary {
         lemmaData.forEach((data2) => {
           index.offsetData.push(data2);
         });
+        if (output.get(lemma)) {
+          output.get(lemma).set(index.pos, index);
+        }
+      });
+    });
+    return output;
+  }
+  searchOffsetsInDataFor(offsets) {
+    return this.database.dataOffsetSearch(offsets);
+  }
+  searchSimpleFor(words) {
+    const output = new Map;
+    const result = this.searchFor(words);
+    result.forEach((lemmaMap, lemma) => {
+      lemmaMap.forEach((index) => {
+        if (index.offsetData.length > 0) {
+          let meaning = "";
+          const firstWords = index.offsetData[0].words.join(", ");
+          if (index.offsetData[0].glossary.length > 0) {
+            meaning = index.offsetData[0].glossary[0];
+          }
+          if (output.get(lemma)) {
+            output.get(lemma).set(index.pos, {
+              words: firstWords,
+              meaning,
+              lemma
+            });
+          } else {
+            output.set(lemma, new Map([
+              [
+                index.pos,
+                {
+                  words: firstWords,
+                  meaning,
+                  lemma
+                }
+              ]
+            ]));
+          }
+        }
+      });
+    });
+    return output;
+  }
+  wordsStartingWith(prefix) {
+    let output = [];
+    if (prefix !== "") {
+      output = this.database.index.filter((item) => item.lemma.startsWith(prefix)).map((item) => item.lemma);
+    }
+    return output;
+  }
+  wordsEndingWith(suffix) {
+    let output = [];
+    if (suffix !== "") {
+      output = this.database.index.filter((item) => item.lemma.endsWith(suffix)).map((item) => item.lemma);
+    }
+    return output;
+  }
+  wordsIncluding(word) {
+    let output = [];
+    if (word !== "") {
+      output = this.database.index.filter((item) => item.lemma.includes(word)).map((item) => item.lemma);
+    }
+    return output;
+  }
+  wordsUsingAllCharactersFrom(query, ignorePhrases = true) {
+    let output = [];
+    if (query === "") {
+      return output;
+    }
+    const querySplit = query.split("").sort();
+    output = this.database.index.filter((item) => {
+      const lemmaSplit = item.lemma.split("").sort();
+      if (ignorePhrases && (lemmaSplit.includes("_") || lemmaSplit.includes("-"))) {
+        return false;
+      }
+      for (let i = 0;i < querySplit.length; i += 1) {
+        const found = lemmaSplit.indexOf(querySplit[i]);
+        if (found < 0) {
+          return false;
+        }
+        lemmaSplit.splice(found, 1);
