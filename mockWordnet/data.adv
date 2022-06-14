@@ -6,4 +6,5 @@
 00001837 02 r 03 AD 0 A.D. 0 anno_Domini 0 000 | in the Christian era; used before dates after the supposed year Christ was born; "in AD 200"  
 00001981 02 r 03 CE 0 C.E. 0 Common_Era 0 000 | of the period coinciding with the Christian era; preferred by some writers who are not Christians; "in 200 CE"  
 00002142 02 r 03 BC 0 B.C. 0 before_Christ 0 000 | before the Christian era; used following dates before the supposed year Christ was born; "in 200 BC"  
-00002296 02 r 02 BCE 0 B.C.E. 0 000 | of the period before the Common Era; prefer
+00002296 02 r 02 BCE 0 B.C.E. 0 000 | of the period before the Common Era; preferred by some writers who are not Christians; "in 200 BCE"  
+00002436 02 r 03 horseback 0
