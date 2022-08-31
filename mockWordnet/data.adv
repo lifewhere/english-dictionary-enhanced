@@ -20,4 +20,5 @@
 00004038 02 r 01 pointedly 0 001 \ 00765862 a 0101 | in such a manner as to make something clearly evident; "he pointedly ignored the question"  
 00004184 02 r 01 negatively 0 001 \ 01818234 a 0101 | in a negative way; "he was negatively inclined"  
 00004288 02 r 01 negatively 1 001 \ 01128508 a 0101 | in a harmful manner; "he was negatively affected"  
-00004394 02 r 01 kindly 0 002 \ 01372049 a 0101 ! 00004567 r 0101 | in a kind manner or out of kindness; "He spoke kindly to the boy"; "she kindly 
+00004394 02 r 01 kindly 0 002 \ 01372049 a 0101 ! 00004567 r 0101 | in a kind manner or out of kindness; "He spoke kindly to the boy"; "she kindly overlooked the mistake"  
+00004567 02 r 01 unkindly 0 002 ! 00004394 r 0101 \ 01373728
