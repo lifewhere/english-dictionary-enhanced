@@ -22,4 +22,5 @@
 00004288 02 r 01 negatively 1 001 \ 01128508 a 0101 | in a harmful manner; "he was negatively affected"  
 00004394 02 r 01 kindly 0 002 \ 01372049 a 0101 ! 00004567 r 0101 | in a kind manner or out of kindness; "He spoke kindly to the boy"; "she kindly overlooked the mistake"  
 00004567 02 r 01 unkindly 0 002 ! 00004394 r 0101 \ 01373728 a 0101 | in an unkind manner or with unkindness; "The teacher treats the children unkindly"  
-00004722 02 r 05 merely 0 simply 0 just 0 only 2 but 1 002 \ 01792573 a 0203 \ 01792573 a 0102 | and nothing more; "I was merely asking"; "it is simply a matter of time"; "just a scratch"; "he was only a child"; "hopes that l
+00004722 02 r 05 merely 0 simply 0 just 0 only 2 but 1 002 \ 01792573 a 0203 \ 01792573 a 0102 | and nothing more; "I was merely asking"; "it is simply a matter of time"; "just a scratch"; "he was only a child"; "hopes that last but a moment"  
+00004967 02 r 01 simply 2 000 | absolutely; altogether;
