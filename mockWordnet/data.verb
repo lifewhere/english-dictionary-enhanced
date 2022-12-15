@@ -9,4 +9,4 @@
 00002942 29 v 01 hyperventilate 0 003 @ 00001740 v 0000 + 00833870 n 0101 $ 00003133 v 0000 01 + 02 00 | breathe excessively hard and fast; "The mountain climber started to hyperventilate"  
 00003133 29 v 01 hyperventilate 1 003 $ 00002942 v 0000 @ 00078760 v 0000 + 00833870 n 0101 01 + 09 00 | produce hyperventilation in; "The nurses had to hyperventilate the patient"  
 00003316 29 v 01 aspirate 0 003 @ 00005041 v 0000 + 00836788 n 0103 + 02748491 n 0101 01 + 08 00 | suck in (air)  
-00003431 29 v 04 burp 0 bubble 0 belch 0 
+00003431 29 v 04 burp 0 bubble 0 belch 0 eruct 0 005 @ 00105333 v 0000 + 00117578 n 0405 + 00117578 n 0301 + 09229709 n 02
