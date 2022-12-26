@@ -13,4 +13,4 @@
 00003662 29 v 01 force_out 0 001 @ 00105333 v 0000 02 + 08 00 + 11 00 | emit or cause to move with force of effort; "force out the air"; "force out the splinter"  
 00003826 29 v 02 hiccup 0 hiccough 0 003 @ 00001740 v 0000 + 14359459 n 0202 + 14359459 n 0101 01 + 02 00 | breathe spasmodically, and make a sound; "When you have to hiccup, drink a glass of cold water"  
 00004032 29 v 02 sigh 0 suspire 4 004 @ 00001740 v 0000 + 07129602 n 0202 + 07393756 n 0101 + 07129602 n 0101 01 + 02 00 | heave or utter a sigh; breathe deeply and heavily; "She sighed sadly"  
-00004227 29 v 03 exhale 0 expir
+00004227 29 v 03 exhale 0 expire 0 breathe_out 0 008 @ 00001740 v 0000 + 03110610 a 0201 + 00835267 n 
