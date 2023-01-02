@@ -15,4 +15,5 @@
 00004032 29 v 02 sigh 0 suspire 4 004 @ 00001740 v 0000 + 07129602 n 0202 + 07393756 n 0101 + 07129602 n 0101 01 + 02 00 | heave or utter a sigh; breathe deeply and heavily; "She sighed sadly"  
 00004227 29 v 03 exhale 0 expire 0 breathe_out 0 008 @ 00001740 v 0000 + 03110610 a 0201 + 00835267 n 0202 + 14842091 n 0102 + 00835267 n 0101 ! 00005041 v 0101 ~ 00006523 v 0000 ~ 00007012 v 0000 02 + 02 00 + 08 00 | expel air; "Exhale when you lift the weight"  
 00004492 29 v 01 hold 4 001 @ 02422663 v 0000 01 + 08 00 | keep from exhaling or expelling; "hold your breath"  
-00004605 29 v 03 exhale 1 give_forth 0 emanate 0 004 @ 00105333 v 0000 + 15109745 n 0301 + 01253060 n 0302 + 14842091 n 0102 02 + 08 00 + 11 00 | give out (b
+00004605 29 v 03 exhale 1 give_forth 0 emanate 0 004 @ 00105333 v 0000 + 15109745 n 0301 + 01253060 n 0302 + 14842091 n 0102 02 + 08 00 + 11 00 | give out (breath or an odor); "The chimney exhales a thick smoke"  
+00004819 29 v 01 sneeze
