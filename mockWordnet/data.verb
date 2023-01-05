@@ -17,4 +17,4 @@
 00004492 29 v 01 hold 4 001 @ 02422663 v 0000 01 + 08 00 | keep from exhaling or expelling; "hold your breath"  
 00004605 29 v 03 exhale 1 give_forth 0 emanate 0 004 @ 00105333 v 0000 + 15109745 n 0301 + 01253060 n 0302 + 14842091 n 0102 02 + 08 00 + 11 00 | give out (breath or an odor); "The chimney exhales a thick smoke"  
 00004819 29 v 01 sneeze 0 005 * 00004227 v 0000 @ 00010241 v 0000 + 10616578 n 0101 + 14314850 n 0102 + 14314850 n 0101 01 + 02 00 | exhale spasmodically, as when an irritant entered one's nose; "Pepper makes me sneeze"  
-00005041 29 v 03 inhale 0 inspire 0 breathe_in 0 014 @ 00001740 v 0000 + 03110485 a 0201 + 00836788 n 0202 + 02749365 a 
+00005041 29 v 03 inhale 0 inspire 0 breathe_in 0 014 @ 00001740 v 0000 + 03110485 a 0201 + 00836788 n 0202 + 02749365 a 0101 + 14919156 n 0101 + 00836788 n 0101 + 04080833 n 0102
