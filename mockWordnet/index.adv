@@ -11,3 +11,6 @@ a_bit r 1 0 1 1 00033663
 a_cappella r 1 0 1 0 00001740  
 a_fortiori r 1 0 1 1 00063483  
 a_good_deal r 1 0 1 0 00059171  
+a_great_deal r 2 0 2 1 00059171 00059413  
+a_hundred_times r 1 0 1 1 00359932  
+a_la_car
