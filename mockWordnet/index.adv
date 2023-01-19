@@ -22,4 +22,7 @@ a_posteriori r 1 1 ! 1 0 00251525
 a_priori r 1 1 ! 1 0 00251611  
 a_trifle r 1 0 1 1 00033663  
 ab_initio r 1 0 1 0 00103194  
-aback r 2 0 2 0 0007573
+aback r 2 0 2 0 00075739 00075656  
+abaft r 1 0 1 0 00275409  
+abaxially r 1 2 ! \ 1 0 00512503  
+abeam 
