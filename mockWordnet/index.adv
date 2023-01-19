@@ -25,4 +25,6 @@ ab_initio r 1 0 1 0 00103194
 aback r 2 0 2 0 00075739 00075656  
 abaft r 1 0 1 0 00275409  
 abaxially r 1 2 ! \ 1 0 00512503  
-abeam 
+abeam r 1 0 1 0 00075881  
+abed r 1 0 1 1 00229216  
+abjectly r 1 1 \ 1 0 00264339
