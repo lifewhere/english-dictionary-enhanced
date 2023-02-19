@@ -20,4 +20,6 @@ abide_by v 2 3 @ ~ $ 2 1 02542280 02457233
 abjure v 1 2 @ + 1 0 00798717  
 ablactate v 1 2 @ * 1 0 01186958  
 ablate v 2 3 @ + ; 2 0 00275466 00177578  
-abnegate v 3 3 @ $ 
+abnegate v 3 3 @ $ + 3 0 02213074 01116275 00758042  
+abolish v 1 3 ! ~ + 1 1 02427334  
+abom
