@@ -18,4 +18,6 @@ abhor v 1 2 @ + 1 1 01774426
 abide v 2 5 @ ~ $ + ; 2 2 02637202 00668099  
 abide_by v 2 3 @ ~ $ 2 1 02542280 02457233  
 abjure v 1 2 @ + 1 0 00798717  
-ablact
+ablactate v 1 2 @ * 1 0 01186958  
+ablate v 2 3 @ + ; 2 0 00275466 00177578  
+abnegate v 3 3 @ $ 
