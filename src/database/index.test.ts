@@ -182,3 +182,9 @@ describe("Test the dictionary", () => {
     expect(result.get(12787364)!.words.join(",")).toContain("christmas_tree");
 
     console.time("dataOffsetSearch2");
+    result = db.dataOffsetSearch([12787364, 2570643]);
+    console.timeEnd("dataOffsetSearch2");
+    expect(result.get(12787364)!.offset).toBe(12787364);
+    expect(result.get(12787364)!.words.join(",")).toContain("christmas_tree");
+  });
+});
