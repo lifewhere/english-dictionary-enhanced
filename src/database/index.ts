@@ -136,3 +136,25 @@ class Database {
     const output = new Map<number, Data>();
     query.forEach((offset) => {
       if (offset && this.dataOffsetIndex.get(offset)) {
+        output.set(
+          offset,
+          Database.copyData(this.dataOffsetIndex.get(offset)!)
+        );
+      }
+    });
+    return output;
+  }
+
+  getSize() {
+    return {
+      count: this.index.length + this.data.length,
+      indexes:
+        this.indexOffsetIndex.size +
+        this.indexLemmaIndex.size +
+        this.dataOffsetIndex.size +
+        this.dataLemmaIndex.size,
+    };
+  }
+}
+
+export default Database;
