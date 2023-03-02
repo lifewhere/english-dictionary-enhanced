@@ -9,4 +9,6 @@ describe("Test the dictionary", () => {
     await dictionary.init();
   }, 20000);
 
-  test("Test searchWord", 
+  test("Test searchWord", () => {
+    console.time("search");
+    let result = dictionary.searc
