@@ -11,4 +11,6 @@ describe("Test the dictionary", () => {
 
   test("Test searchWord", () => {
     console.time("search");
-    let result = dictionary.searc
+    let result = dictionary.searchFor(["coaxing"]);
+    console.timeEnd("search");
+    expect(result.get("c
