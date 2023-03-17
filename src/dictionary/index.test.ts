@@ -20,4 +20,9 @@ describe("Test the dictionary", () => {
       result
         .get("coaxing")!
         .get("noun")!
-        .offsetData.map((item) => item.
+        .offsetData.map((item) => item.words)
+        .join(",")
+    ).toContain("coaxing");
+    expect(
+      result
+ 
