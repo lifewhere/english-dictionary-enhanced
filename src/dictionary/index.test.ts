@@ -14,4 +14,8 @@ describe("Test the dictionary", () => {
     let result = dictionary.searchFor(["coaxing"]);
     console.timeEnd("search");
     expect(result.get("coaxing")!.get("noun")!.lemma).toBe("coaxing");
-    expect(r
+    expect(result.get("coaxing")!.get("noun")!.pos).toBe("noun");
+
+    expect(
+      result
+        .get("co
