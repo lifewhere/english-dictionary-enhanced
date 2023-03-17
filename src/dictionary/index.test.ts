@@ -18,4 +18,6 @@ describe("Test the dictionary", () => {
 
     expect(
       result
-        .get("co
+        .get("coaxing")!
+        .get("noun")!
+        .offsetData.map((item) => item.
