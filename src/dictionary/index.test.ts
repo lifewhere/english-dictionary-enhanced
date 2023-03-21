@@ -27,4 +27,6 @@ describe("Test the dictionary", () => {
       result
         .get("coaxing")!
         .get("noun")!
-        .offsetData.map((item) =
+        .offsetData.map((item) => item.glossary)
+        .join(",")
+    ).toContain("flattery designe
