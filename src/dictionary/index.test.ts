@@ -29,4 +29,7 @@ describe("Test the dictionary", () => {
         .get("noun")!
         .offsetData.map((item) => item.glossary)
         .join(",")
-    ).toContain("flattery designe
+    ).toContain("flattery designed to gain");
+
+    console.time("search2");
+    result = dictionary.searchFor([
