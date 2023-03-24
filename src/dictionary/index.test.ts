@@ -35,4 +35,9 @@ describe("Test the dictionary", () => {
     result = dictionary.searchFor(["yet", "preposterous"]);
     console.timeEnd("search2");
     expect(result.get("yet")!.get("adverb")!.lemma).toBe("yet");
-    expect(result.get("yet")!.g
+    expect(result.get("yet")!.get("adverb")!.pos).toBe("adverb");
+
+    expect(
+      result
+        .get("yet")!
+        .
