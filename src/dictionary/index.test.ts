@@ -32,4 +32,6 @@ describe("Test the dictionary", () => {
     ).toContain("flattery designed to gain");
 
     console.time("search2");
-    result = dictionary.searchFor([
+    result = dictionary.searchFor(["yet", "preposterous"]);
+    console.timeEnd("search2");
+    expect(result
