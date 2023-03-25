@@ -43,4 +43,8 @@ describe("Test the dictionary", () => {
         .get("adverb")!
         .offsetData.map((item) => item.words)
         .join(",")
-    
+    ).toContain("yet");
+    expect(
+      result
+        .get("yet")!
+        
