@@ -53,4 +53,6 @@ describe("Test the dictionary", () => {
     ).toContain("largest drug bust yet");
   });
 
-  test("Test searchOffsetsInData", () 
+  test("Test searchOffsetsInData", () => {
+    console.time("searchOffsetsInData");
+    const result = dictionary
