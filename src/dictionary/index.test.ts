@@ -55,4 +55,5 @@ describe("Test the dictionary", () => {
 
   test("Test searchOffsetsInData", () => {
     console.time("searchOffsetsInData");
-    const result = dictionary
+    const result = dictionary.searchOffsetsInDataFor([12787364, 2570643]);
+    console.timeEnd("searchOf
