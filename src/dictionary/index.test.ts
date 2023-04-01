@@ -47,4 +47,6 @@ describe("Test the dictionary", () => {
     expect(
       result
         .get("yet")!
-        
+        .get("adverb")!
+        .offsetData.map((item) => item.glossary)
+        .join("
