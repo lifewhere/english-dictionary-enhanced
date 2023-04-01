@@ -49,4 +49,8 @@ describe("Test the dictionary", () => {
         .get("yet")!
         .get("adverb")!
         .offsetData.map((item) => item.glossary)
-        .join("
+        .join(",")
+    ).toContain("largest drug bust yet");
+  });
+
+  test("Test searchOffsetsInData", () 
