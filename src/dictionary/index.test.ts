@@ -58,4 +58,7 @@ describe("Test the dictionary", () => {
     const result = dictionary.searchOffsetsInDataFor([12787364, 2570643]);
     console.timeEnd("searchOffsetsInData");
     expect(result.get(12787364)!.offset).toBe(12787364);
-    expect(res
+    expect(result.get(2570643)!.offset).toBe(2570643);
+  });
+
+  test("Test searchSimple", ()
