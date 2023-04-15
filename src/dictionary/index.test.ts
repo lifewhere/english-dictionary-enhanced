@@ -61,4 +61,6 @@ describe("Test the dictionary", () => {
     expect(result.get(2570643)!.offset).toBe(2570643);
   });
 
-  test("Test searchSimple", ()
+  test("Test searchSimple", () => {
+    console.time("searchSimple-drink,train");
+    const result = diction
