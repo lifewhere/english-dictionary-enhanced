@@ -63,4 +63,5 @@ describe("Test the dictionary", () => {
 
   test("Test searchSimple", () => {
     console.time("searchSimple-drink,train");
-    const result = diction
+    const result = dictionary.searchSimpleFor(["drink", "train"]);
+    console.timeEnd("searchSimple-drink,train"
