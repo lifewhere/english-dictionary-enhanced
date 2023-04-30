@@ -64,4 +64,6 @@ describe("Test the dictionary", () => {
   test("Test searchSimple", () => {
     console.time("searchSimple-drink,train");
     const result = dictionary.searchSimpleFor(["drink", "train"]);
-    console.timeEnd("searchSimple-drink,train"
+    console.timeEnd("searchSimple-drink,train");
+    expect(result.get("drink")!.get("noun")!.meaning).toBe(
+      "a single servin
