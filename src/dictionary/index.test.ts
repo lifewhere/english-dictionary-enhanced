@@ -71,4 +71,5 @@ describe("Test the dictionary", () => {
   });
 
   test("Test wordsStartingWith", () => {
-    console
+    console.time("wordsStartingWith");
+    const result = dictionary.wordsStartingWit
