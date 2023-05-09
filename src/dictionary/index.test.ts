@@ -66,4 +66,9 @@ describe("Test the dictionary", () => {
     const result = dictionary.searchSimpleFor(["drink", "train"]);
     console.timeEnd("searchSimple-drink,train");
     expect(result.get("drink")!.get("noun")!.meaning).toBe(
-      "a single servin
+      "a single serving of a beverage"
+    );
+  });
+
+  test("Test wordsStartingWith", () => {
+    console
