@@ -72,4 +72,6 @@ describe("Test the dictionary", () => {
 
   test("Test wordsStartingWith", () => {
     console.time("wordsStartingWith");
-    const result = dictionary.wordsStartingWit
+    const result = dictionary.wordsStartingWith("bring");
+    console.timeEnd("wordsStartingWith");
+    expect(result.length).toBe(24);
