@@ -78,4 +78,6 @@ describe("Test the dictionary", () => {
   });
 
   test("Test wordsEndingWith", () => {
-    console.time("wordsEndingWith
+    console.time("wordsEndingWith");
+    const result = dictionary.wordsEndingWith("bring");
+    console.time
