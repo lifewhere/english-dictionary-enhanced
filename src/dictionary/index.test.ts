@@ -80,4 +80,8 @@ describe("Test the dictionary", () => {
   test("Test wordsEndingWith", () => {
     console.time("wordsEndingWith");
     const result = dictionary.wordsEndingWith("bring");
-    console.time
+    console.timeEnd("wordsEndingWith");
+    expect(result.length).toBe(1);
+  });
+
+  test(
