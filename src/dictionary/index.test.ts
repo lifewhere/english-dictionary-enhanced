@@ -86,4 +86,6 @@ describe("Test the dictionary", () => {
 
   test("Test wordsIncluding", () => {
     console.time("wordsIncluding");
-    const result =
+    const result = dictionary.wordsIncluding("bring");
+    console.timeEnd("wordsIncluding");
+    expect(result.
