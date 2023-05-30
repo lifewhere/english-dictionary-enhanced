@@ -92,4 +92,6 @@ describe("Test the dictionary", () => {
   });
 
   test("Test wordsUsingAllCharactersFrom", () => {
-    console.
+    console.time("wordsUsingAllCharactersFrom");
+    const result = dictionary.wordsUsingAllCharactersFrom("bringing");
+    console.timeEnd("wordsUsingAllCharactersFro
