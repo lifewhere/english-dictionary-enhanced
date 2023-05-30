@@ -98,4 +98,6 @@ describe("Test the dictionary", () => {
     expect(result.length).toBe(6);
   });
 
-  test("Test wordsWithCharsIn",
+  test("Test wordsWithCharsIn", () => {
+    console.time("wordsWithCharsIn");
+    const result = dictionary.wordsWithCharsIn("precip
