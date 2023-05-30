@@ -88,4 +88,8 @@ describe("Test the dictionary", () => {
     console.time("wordsIncluding");
     const result = dictionary.wordsIncluding("bring");
     console.timeEnd("wordsIncluding");
-    expect(result.
+    expect(result.length).toBe(25);
+  });
+
+  test("Test wordsUsingAllCharactersFrom", () => {
+    console.
