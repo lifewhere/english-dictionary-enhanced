@@ -104,4 +104,5 @@ describe("Test the dictionary", () => {
     console.timeEnd("wordsWithCharsIn");
     expect(result.size).toBe(7);
 
- 
+    console.time("wordsWithCharsIn-priority");
+    const result2 = dictionary.
