@@ -111,3 +111,5 @@ describe("Test the dictionary", () => {
   });
 
   test("Test hasAllCharsIn", () => {
+    expect(Dictionary.hasAllCharsIn("bringing", "ing")).toBe(true);
+    expect(Dic
