@@ -106,4 +106,8 @@ describe("Test the dictionary", () => {
 
     console.time("wordsWithCharsIn-priority");
     const result2 = dictionary.wordsWithCharsIn("precipitate", "abc");
-    console.timeEnd("wordsWithCharsIn-prio
+    console.timeEnd("wordsWithCharsIn-priority");
+    expect(result2.size).toBe(7);
+  });
+
+  test("Test hasAllCharsIn", () => {
