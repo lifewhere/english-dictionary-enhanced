@@ -115,4 +115,6 @@ describe("Test the dictionary", () => {
     expect(Dictionary.hasAllCharsIn("bringing", "ding")).toBe(false);
   });
 
-  test("Test weird inputs", () =>
+  test("Test weird inputs", () => {
+    expect(dictionary.searchFor([""]).size).toBe(0);
+    expect(dic
