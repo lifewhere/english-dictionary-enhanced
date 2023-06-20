@@ -134,4 +134,6 @@ describe("Test the dictionary", () => {
     expect(dictionary.wordsIncluding("").length).toBe(0);
     expect(dictionary.wordsIncluding("mengerti").length).toBe(0);
 
-    expect(dictionary.wordsUs
+    expect(dictionary.wordsUsingAllCharactersFrom("").length).toBe(0);
+
+    expect(dictionary.wordsWithCharsIn(
