@@ -128,4 +128,5 @@ describe("Test the dictionary", () => {
     expect(dictionary.wordsStartingWith("").length).toBe(0);
     expect(dictionary.wordsStartingWith("mengerti").length).toBe(0);
 
-    expect(dictionary.wordsEndingWith("").lengt
+    expect(dictionary.wordsEndingWith("").length).toBe(0);
+    expect(dictionary.wordsEndingWith("mengerti").length
