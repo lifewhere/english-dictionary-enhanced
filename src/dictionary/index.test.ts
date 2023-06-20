@@ -125,4 +125,5 @@ describe("Test the dictionary", () => {
     expect(dictionary.searchSimpleFor([]).size).toBe(0);
     expect(dictionary.searchSimpleFor(["googoogoo"]).size).toBe(0);
 
-    expect(dictionary.wordsStarting
+    expect(dictionary.wordsStartingWith("").length).toBe(0);
+    expect(dictionary.wordsStartingWith("m
