@@ -123,4 +123,6 @@ describe("Test the dictionary", () => {
     expect(dictionary.searchOffsetsInDataFor([]).size).toBe(0);
 
     expect(dictionary.searchSimpleFor([]).size).toBe(0);
-    expect(dictionary.se
+    expect(dictionary.searchSimpleFor(["googoogoo"]).size).toBe(0);
+
+    expect(dictionary.wordsStarting
