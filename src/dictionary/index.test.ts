@@ -119,4 +119,5 @@ describe("Test the dictionary", () => {
     expect(dictionary.searchFor([""]).size).toBe(0);
     expect(dictionary.searchFor([]).size).toBe(0);
 
-    expect(dictionary.searchOffsetsInDataFor([-1]
+    expect(dictionary.searchOffsetsInDataFor([-1]).size).toBe(0);
+    expect(dictionary.searchOffsetsInDataFor([]).size).toB
