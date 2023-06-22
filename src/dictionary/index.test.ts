@@ -136,4 +136,6 @@ describe("Test the dictionary", () => {
 
     expect(dictionary.wordsUsingAllCharactersFrom("").length).toBe(0);
 
-    expect(dictionary.wordsWithCharsIn(
+    expect(dictionary.wordsWithCharsIn("").size).toBe(0);
+  });
+});
