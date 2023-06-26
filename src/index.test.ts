@@ -4,4 +4,6 @@ import Dictionary from "./index";
 
 const dictionary = new Dictionary(enWordnet.get("3.0"));
 
-describe("Test the index file for 
+describe("Test the index file for EnDictionary", () => {
+  beforeAll(async () => {
+    await dictionary.init()
