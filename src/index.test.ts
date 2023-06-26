@@ -10,4 +10,5 @@ describe("Test the index file for EnDictionary", () => {
   }, 10000);
 
   test("Test initialization", () => {
-    const result = di
+    const result = dictionary.searchFor(["yet"]);
+    expect(result.get("yet")!.get("adverb")!.lemma).t
