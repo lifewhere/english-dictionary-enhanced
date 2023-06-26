@@ -11,4 +11,5 @@ describe("Test the index file for EnDictionary", () => {
 
   test("Test initialization", () => {
     const result = dictionary.searchFor(["yet"]);
-    expect(result.get("yet")!.get("adverb")!.lemma).t
+    expect(result.get("yet")!.get("adverb")!.lemma).toBe("yet");
+    expect(result.get("yet")!.get("adverb")!.pos).toBe("adve
