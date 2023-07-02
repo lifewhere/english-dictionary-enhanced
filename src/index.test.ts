@@ -17,3 +17,8 @@ describe("Test the index file for EnDictionary", () => {
 });
 
 describe("Test that all POS are indexed", () => {
+  beforeAll(async () => {
+    await dictionary.init();
+  }, 10000);
+
+  test('se
