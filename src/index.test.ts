@@ -25,4 +25,5 @@ describe("Test that all POS are indexed", () => {
     const result = dictionary.searchFor(["smart"]);
     expect(result.get("smart")!.size).not.toEqual(1);
     expect(
-      result.get("smart")!.get("adjective")!.offsetData[0].gl
+      result.get("smart")!.get("adjective")!.offsetData[0].glossary[0]
+    ).toEqual("showing mental alertness and calc
