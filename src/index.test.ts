@@ -26,4 +26,7 @@ describe("Test that all POS are indexed", () => {
     expect(result.get("smart")!.size).not.toEqual(1);
     expect(
       result.get("smart")!.get("adjective")!.offsetData[0].glossary[0]
-    ).toEqual("showing mental alertness and calc
+    ).toEqual("showing mental alertness and calculation and resourcefulness");
+  }, 10000);
+
+  test("searchOffsetsInDataFor() can find the
