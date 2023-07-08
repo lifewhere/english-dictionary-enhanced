@@ -30,4 +30,6 @@ describe("Test that all POS are indexed", () => {
   }, 10000);
 
   test("searchOffsetsInDataFor() can find the specified offset", () => {
-    const result = dictionary.searchOffsetsInD
+    const result = dictionary.searchOffsetsInDataFor([438707, 975487]);
+    expect(result.get(438707)).toBeDefined();
+ 
