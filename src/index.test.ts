@@ -29,4 +29,5 @@ describe("Test that all POS are indexed", () => {
     ).toEqual("showing mental alertness and calculation and resourcefulness");
   }, 10000);
 
-  test("searchOffsetsInDataFor() can find the
+  test("searchOffsetsInDataFor() can find the specified offset", () => {
+    const result = dictionary.searchOffsetsInD
