@@ -21,4 +21,5 @@ describe("Test that all POS are indexed", () => {
     await dictionary.init();
   }, 10000);
 
-  test('se
+  test('searchFor(["smart"]) returns the predicted result for adjective sense', () => {
+    cons
