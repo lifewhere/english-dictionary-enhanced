@@ -5,4 +5,8 @@ describe("Test parsing a data line", () => {
   test("Parse a data line", () => {
     let item = new DataLine().parse(
       "  20 ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE  "
-    
+    );
+    expect(item.isComment).toBe(true);
+
+    item = new DataLine().parse(
+      '
