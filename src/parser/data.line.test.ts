@@ -9,4 +9,4 @@ describe("Test parsing a data line", () => {
     expect(item.isComment).toBe(true);
 
     item = new DataLine().parse(
-      '
+      '00002684 03 n 02 object 0 physical_object 0 039 @ 00001930 n 0000 + 00532607
