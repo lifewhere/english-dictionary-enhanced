@@ -13,4 +13,5 @@ describe("Test parsing a data line", () => {
     );
     expect(item.offset).toBe(2684);
     expect(item.pos).toBe("noun");
- 
+    expect(item.wordCount).toBe(2);
+    expect(item.words).toEqual(["obj
