@@ -16,4 +16,7 @@ describe("Test parsing a data line", () => {
     expect(item.wordCount).toBe(2);
     expect(item.words).toEqual(["object", "physical_object"]);
     expect(item.pointerCnt).toBe(39);
-    expect(i
+    expect(item.pointers[38]).toEqual({
+      symbol: "Hyponym",
+      pos: "noun",
+     
