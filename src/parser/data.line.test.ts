@@ -19,4 +19,7 @@ describe("Test parsing a data line", () => {
     expect(item.pointers[38]).toEqual({
       symbol: "Hyponym",
       pos: "noun",
-     
+      offset: 9477037,
+    });
+    expect(item.glossary).toEqual([
+      "a tangible and visible entity",
