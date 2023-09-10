@@ -23,3 +23,5 @@ describe("Test parsing a data line", () => {
     });
     expect(item.glossary).toEqual([
       "a tangible and visible entity",
+      "an entity that can cast a shadow",
+      '"it was full of 
