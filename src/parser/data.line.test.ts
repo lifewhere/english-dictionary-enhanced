@@ -28,4 +28,4 @@ describe("Test parsing a data line", () => {
     ]);
 
     item = new DataLine().parse(
-      "0008
+      "00089891 04 n 01 repossession 0 002 @ 00045907 n 0000 + 02205887 v 0102 | the action 
