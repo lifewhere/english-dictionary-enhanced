@@ -24,4 +24,8 @@ describe("Test parsing a data line", () => {
     expect(item.glossary).toEqual([
       "a tangible and visible entity",
       "an entity that can cast a shadow",
-      '"it was full of 
+      '"it was full of rackets, balls and other objects"',
+    ]);
+
+    item = new DataLine().parse(
+      "0008
