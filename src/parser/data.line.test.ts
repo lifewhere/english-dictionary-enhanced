@@ -31,4 +31,7 @@ describe("Test parsing a data line", () => {
       "00089891 04 n 01 repossession 0 002 @ 00045907 n 0000 + 02205887 v 0102 | the action of regaining possession (especially the seizure of collateral securing a loan that is in default) "
     );
     expect(item.offset).toBe(89891);
-    expect(item.pos).toB
+    expect(item.pos).toBe("noun");
+    expect(item.wordCount).toBe(1);
+    expect(item.words).toEqual(["repossession"]);
+ 
