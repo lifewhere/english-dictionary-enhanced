@@ -34,4 +34,5 @@ describe("Test parsing a data line", () => {
     expect(item.pos).toBe("noun");
     expect(item.wordCount).toBe(1);
     expect(item.words).toEqual(["repossession"]);
- 
+    expect(item.pointerCnt).toBe(2);
+    expect(item.pointers[0]).toEqual(
