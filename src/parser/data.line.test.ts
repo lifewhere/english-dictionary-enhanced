@@ -35,4 +35,9 @@ describe("Test parsing a data line", () => {
     expect(item.wordCount).toBe(1);
     expect(item.words).toEqual(["repossession"]);
     expect(item.pointerCnt).toBe(2);
-    expect(item.pointers[0]).toEqual(
+    expect(item.pointers[0]).toEqual({
+      symbol: "Hypernym",
+      pos: "noun",
+      offset: 45907,
+    });
+    
