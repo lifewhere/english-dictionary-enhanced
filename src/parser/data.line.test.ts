@@ -40,4 +40,5 @@ describe("Test parsing a data line", () => {
       pos: "noun",
       offset: 45907,
     });
-    
+    expect(item.glossary).toEqual([
+      "the action of regaining possess
