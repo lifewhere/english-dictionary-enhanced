@@ -5,4 +5,8 @@ class DataLine {
   line: Data;
 
   constructor() {
-    thi
+    this.line = {
+      offset: 0,
+      pos: "",
+      wordCount: 0,
+      words: [],
