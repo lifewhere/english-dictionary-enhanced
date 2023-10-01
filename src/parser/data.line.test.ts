@@ -41,4 +41,7 @@ describe("Test parsing a data line", () => {
       offset: 45907,
     });
     expect(item.glossary).toEqual([
-      "the action of regaining possession (especially the seizure of collateral securing a loan that is in de
+      "the action of regaining possession (especially the seizure of collateral securing a loan that is in default)",
+    ]);
+  });
+});
