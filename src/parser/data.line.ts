@@ -10,3 +10,7 @@ class DataLine {
       pos: "",
       wordCount: 0,
       words: [],
+      pointerCnt: 0,
+      pointers: [],
+      glossary: [],
+      i
