@@ -13,4 +13,9 @@ class DataLine {
       pointerCnt: 0,
       pointers: [],
       glossary: [],
-      i
+      isComment: false,
+    };
+  }
+
+  parse(line: string) {
+    if (line
