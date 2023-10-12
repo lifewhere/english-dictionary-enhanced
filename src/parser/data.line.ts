@@ -21,4 +21,7 @@ class DataLine {
     if (line.charAt(0) === " ") {
       this.line.isComment = true;
       return this.line;
-   
+    }
+
+    const glossarySplit = line.split("|");
+    if (glossarySpl
