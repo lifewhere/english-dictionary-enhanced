@@ -18,4 +18,7 @@ class DataLine {
   }
 
   parse(line: string) {
-    if (line
+    if (line.charAt(0) === " ") {
+      this.line.isComment = true;
+      return this.line;
+   
