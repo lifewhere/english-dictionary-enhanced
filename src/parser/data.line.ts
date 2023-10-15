@@ -26,4 +26,8 @@ class DataLine {
     const glossarySplit = line.split("|");
     if (glossarySplit.length > 1) {
       glossarySplit[1].split(";").forEach((part) => {
-        this.
+        this.line.glossary.push(part.trim());
+      });
+    }
+
+    const meta = glossarySplit[0].split(" ")
