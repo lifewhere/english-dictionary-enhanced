@@ -24,4 +24,6 @@ class DataLine {
     }
 
     const glossarySplit = line.split("|");
-    if (glossarySpl
+    if (glossarySplit.length > 1) {
+      glossarySplit[1].split(";").forEach((part) => {
+        this.
