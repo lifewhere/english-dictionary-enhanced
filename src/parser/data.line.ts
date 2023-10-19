@@ -32,4 +32,7 @@ class DataLine {
 
     const meta = glossarySplit[0].split(" ");
     this.line.offset = parseInt(meta.shift()!, 10);
-    // const lexFilenum 
+    // const lexFilenum = parseInt(meta.shift()!, 10);
+
+    const pos = meta.shift();
+    if (pos !== u
