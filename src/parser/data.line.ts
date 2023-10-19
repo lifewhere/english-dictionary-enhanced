@@ -35,4 +35,5 @@ class DataLine {
     // const lexFilenum = parseInt(meta.shift()!, 10);
 
     const pos = meta.shift();
-    if (pos !== u
+    if (pos !== undefined && configs.pos.get(pos) !== undefined) {
+      this.line.pos = configs.pos.g
