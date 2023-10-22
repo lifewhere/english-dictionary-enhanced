@@ -36,4 +36,8 @@ class DataLine {
 
     const pos = meta.shift();
     if (pos !== undefined && configs.pos.get(pos) !== undefined) {
-      this.line.pos = configs.pos.g
+      this.line.pos = configs.pos.get(pos)!;
+    }
+
+    this.line.wordCount = parseInt(meta.shift()!, 16);
+    for (
