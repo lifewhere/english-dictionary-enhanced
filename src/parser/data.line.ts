@@ -41,4 +41,5 @@ class DataLine {
 
     this.line.wordCount = parseInt(meta.shift()!, 16);
     for (let index = 0; index < this.line.wordCount; index += 1) {
-      c
+      const word = meta.shift();
+      // const lexId = parseInt(meta.shift()!, 1
