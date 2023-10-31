@@ -42,4 +42,6 @@ class DataLine {
     this.line.wordCount = parseInt(meta.shift()!, 16);
     for (let index = 0; index < this.line.wordCount; index += 1) {
       const word = meta.shift();
-      // const lexId = parseInt(meta.shift()!, 1
+      // const lexId = parseInt(meta.shift()!, 16);
+      if (word !== undefined) {
+        this.line.words.push(word.toLower
