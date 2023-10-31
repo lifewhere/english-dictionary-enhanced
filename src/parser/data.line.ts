@@ -44,4 +44,9 @@ class DataLine {
       const word = meta.shift();
       // const lexId = parseInt(meta.shift()!, 16);
       if (word !== undefined) {
-        this.line.words.push(word.toLower
+        this.line.words.push(word.toLowerCase());
+      }
+    }
+
+    this.line.pointerCnt = parseInt(meta.shift()!, 10);
+    f
