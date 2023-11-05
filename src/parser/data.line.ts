@@ -49,4 +49,5 @@ class DataLine {
     }
 
     this.line.pointerCnt = parseInt(meta.shift()!, 10);
-    f
+    for (let index = 0; index < this.line.pointerCnt; index += 1) {
+      const 
