@@ -56,4 +56,6 @@ class DataLine {
         pos: "",
       };
 
-    
+      block.symbol = meta.shift()!;
+      block.offset = parseInt(meta.shift()!, 10);
+
