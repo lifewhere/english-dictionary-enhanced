@@ -50,4 +50,10 @@ class DataLine {
 
     this.line.pointerCnt = parseInt(meta.shift()!, 10);
     for (let index = 0; index < this.line.pointerCnt; index += 1) {
-      const 
+      const block = {
+        symbol: "",
+        offset: 0,
+        pos: "",
+      };
+
+    
