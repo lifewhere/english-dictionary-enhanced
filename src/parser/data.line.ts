@@ -63,4 +63,6 @@ class DataLine {
       const posValue = configs.pos.get(pos);
       if (posValue != undefined) {
         block.pos = posValue;
-        const 
+        const symbols = configs.pointerSymbols.get(pos);
+        if (symbols !== undefined) {
+          
