@@ -59,3 +59,5 @@ class DataLine {
       block.symbol = meta.shift()!;
       block.offset = parseInt(meta.shift()!, 10);
 
+      const pos = meta.shift()!;
+      const posValue = configs.pos.g
