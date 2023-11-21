@@ -66,4 +66,10 @@ class DataLine {
         const symbols = configs.pointerSymbols.get(pos);
         if (symbols !== undefined) {
           const symbol = symbols.get(block.symbol);
-          if (symbol !== undefine
+          if (symbol !== undefined) {
+            block.symbol = symbol;
+          }
+        }
+      }
+
+      // block.sourceTargetH
