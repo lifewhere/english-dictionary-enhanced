@@ -74,4 +74,11 @@ class DataLine {
 
       // block.sourceTargetHex = meta.shift()
       meta.shift();
-      this.line.pointers.push(
+      this.line.pointers.push(block);
+    }
+
+    return this.line;
+  }
+}
+
+export default DataL
