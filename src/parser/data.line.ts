@@ -72,4 +72,6 @@ class DataLine {
         }
       }
 
-      // block.sourceTargetH
+      // block.sourceTargetHex = meta.shift()
+      meta.shift();
+      this.line.pointers.push(
