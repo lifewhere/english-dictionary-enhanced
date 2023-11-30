@@ -78,3 +78,25 @@ describe("Test parsing an index line", () => {
     expect(item.offsetCount).toBe(1);
     expect(item.pointerCount).toBe(1);
     expect(item.pointers).toEqual([
+      { offset: 0, pos: "adjective", symbol: "Similar to" },
+    ]);
+    expect(item.senseCount).toBe(1);
+    expect(item.tagSenseCount).toBe(0);
+    expect(item.offsets).toEqual([2074929]);
+
+    item = new IndexLine().parse(
+      "armed a 3 3 ! & ; 3 1 00142407 00146210 00144877  "
+    );
+    expect(item.lemma).toBe("armed");
+    expect(item.pos).toBe("adjective");
+    expect(item.offsetCount).toBe(3);
+    expect(item.pointerCount).toBe(3);
+    expect(item.pointers).toEqual([
+      { offset: 0, pos: "adjective", symbol: "Antonym" },
+      { offset: 0, pos: "adjective", symbol: "Similar to" },
+    ]);
+    expect(item.senseCount).toBe(3);
+    expect(item.tagSenseCount).toBe(1);
+    expect(item.offsets).toEqual([142407, 146210, 144877]);
+  });
+});
