@@ -81,4 +81,4 @@ class DataLine {
   }
 }
 
-export default DataL
+export default DataLine;
