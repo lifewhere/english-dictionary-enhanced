@@ -1,3 +1,8 @@
 import configs from "./configs";
 import Index from "./interace.index";
-im
+import Pointer from "./interface.pointer";
+
+class IndexLine {
+  line: Index;
+
+  co
