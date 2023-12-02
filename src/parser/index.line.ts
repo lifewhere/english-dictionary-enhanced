@@ -5,4 +5,8 @@ import Pointer from "./interface.pointer";
 class IndexLine {
   line: Index;
 
-  co
+  constructor() {
+    this.line = {
+      lemma: "",
+      pos: "",
+      offsetCount: 0,
