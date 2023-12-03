@@ -10,3 +10,7 @@ class IndexLine {
       lemma: "",
       pos: "",
       offsetCount: 0,
+      offsets: [],
+      offsetData: [],
+      pointerCount: 0,
+      poi
