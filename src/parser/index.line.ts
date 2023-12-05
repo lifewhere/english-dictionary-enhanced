@@ -13,4 +13,8 @@ class IndexLine {
       offsets: [],
       offsetData: [],
       pointerCount: 0,
-      poi
+      pointers: [],
+      senseCount: 0,
+      tagSenseCount: 0,
+      isComment: false,
+    };
