@@ -18,3 +18,8 @@ class IndexLine {
       tagSenseCount: 0,
       isComment: false,
     };
+  }
+
+  parse(line: string) {
+    if (line.charAt(0) === " ") {
+      this.line.isComment = true
