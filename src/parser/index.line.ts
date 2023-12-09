@@ -22,4 +22,9 @@ class IndexLine {
 
   parse(line: string) {
     if (line.charAt(0) === " ") {
-      this.line.isComment = true
+      this.line.isComment = true;
+      return this.line;
+    }
+
+    const tokens = line.split(" ");
+    t
