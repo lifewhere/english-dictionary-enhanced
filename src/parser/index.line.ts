@@ -30,4 +30,5 @@ class IndexLine {
     this.line.lemma = tokens.shift()!;
 
     const posAbbr = tokens.shift()!;
-  
+    this.line.pos = configs.pos.get(posAbbr)!;
+    this.line.offsetCount = parseI
