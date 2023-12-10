@@ -27,4 +27,7 @@ class IndexLine {
     }
 
     const tokens = line.split(" ");
-    t
+    this.line.lemma = tokens.shift()!;
+
+    const posAbbr = tokens.shift()!;
+  
