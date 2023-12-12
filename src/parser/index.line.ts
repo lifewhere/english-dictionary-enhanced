@@ -32,4 +32,6 @@ class IndexLine {
     const posAbbr = tokens.shift()!;
     this.line.pos = configs.pos.get(posAbbr)!;
     this.line.offsetCount = parseInt(tokens.shift()!, 10);
-    this.line.pointerCount = parseInt(tok
+    this.line.pointerCount = parseInt(tokens.shift()!, 10);
+    this.line.pointers = [];
+    for (let index = 0; index < this.li
