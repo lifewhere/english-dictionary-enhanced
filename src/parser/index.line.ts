@@ -34,4 +34,6 @@ class IndexLine {
     this.line.offsetCount = parseInt(tokens.shift()!, 10);
     this.line.pointerCount = parseInt(tokens.shift()!, 10);
     this.line.pointers = [];
-    for (let index = 0; index < this.li
+    for (let index = 0; index < this.line.pointerCount; index += 1) {
+      const token = tokens.shift()!;
+      if (token !== und
