@@ -37,4 +37,6 @@ class IndexLine {
     for (let index = 0; index < this.line.pointerCount; index += 1) {
       const token = tokens.shift()!;
       if (token !== undefined) {
-        const pointerSymbol = configs.pointerSymbols.get(posAbbr
+        const pointerSymbol = configs.pointerSymbols.get(posAbbr)!;
+        const pointerSymbolValue = pointerSymbol.get(token);
+        if (pointerSymbolValue
