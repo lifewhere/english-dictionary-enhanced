@@ -39,4 +39,6 @@ class IndexLine {
       if (token !== undefined) {
         const pointerSymbol = configs.pointerSymbols.get(posAbbr)!;
         const pointerSymbolValue = pointerSymbol.get(token);
-        if (pointerSymbolValue
+        if (pointerSymbolValue !== undefined) {
+          const pointer: Pointer = {
+            symbol: pointerS
