@@ -49,4 +49,5 @@ class IndexLine {
         }
       }
     }
-    this.line.
+    this.line.senseCount = parseInt(tokens.shift()!, 10);
+    this.line.tagSenseCount = parseInt(
