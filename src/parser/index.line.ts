@@ -41,4 +41,7 @@ class IndexLine {
         const pointerSymbolValue = pointerSymbol.get(token);
         if (pointerSymbolValue !== undefined) {
           const pointer: Pointer = {
-            symbol: pointerS
+            symbol: pointerSymbolValue,
+            offset: 0,
+            pos: this.line.pos,
+          }
