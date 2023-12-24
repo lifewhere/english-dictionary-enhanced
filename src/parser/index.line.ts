@@ -44,4 +44,9 @@ class IndexLine {
             symbol: pointerSymbolValue,
             offset: 0,
             pos: this.line.pos,
-          }
+          };
+          this.line.pointers.push(pointer);
+        }
+      }
+    }
+    this.line.
