@@ -1,4 +1,9 @@
 import Pointer from "./interface.pointer";
 import Data from "./interface.data";
 
-in
+interface Index {
+  lemma: string;
+  pos: string;
+
+  offsetCount: number;
+ 
