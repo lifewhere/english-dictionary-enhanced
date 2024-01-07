@@ -53,4 +53,10 @@ class IndexLine {
     this.line.tagSenseCount = parseInt(tokens.shift()!, 10);
     this.line.offsets = [];
     for (let index = 0; index < this.line.offsetCount; index += 1) {
-      this.line.offsets.push(parseInt(tokens.sh
+      this.line.offsets.push(parseInt(tokens.shift()!, 10));
+    }
+    return this.line;
+  }
+}
+
+export default IndexLine;
