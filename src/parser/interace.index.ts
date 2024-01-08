@@ -6,4 +6,8 @@ interface Index {
   pos: string;
 
   offsetCount: number;
- 
+  offsets: number[];
+  offsetData: Data[];
+
+  pointerCount: number;
+  pointers: Po
