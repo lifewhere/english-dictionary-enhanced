@@ -18,4 +18,4 @@ interface Index {
   isComment: boolean;
 }
 
-expo
+export default Index;
