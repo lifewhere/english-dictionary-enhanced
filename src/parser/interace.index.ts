@@ -10,4 +10,12 @@ interface Index {
   offsetData: Data[];
 
   pointerCount: number;
-  pointers: Po
+  pointers: Pointer[];
+
+  senseCount: number;
+  tagSenseCount: number;
+
+  isComment: boolean;
+}
+
+expo
