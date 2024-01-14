@@ -1,3 +1,7 @@
 interface Pointer {
   symbol: string;
-  offset: nu
+  offset: number;
+  pos: string;
+}
+
+export default Pointer;
