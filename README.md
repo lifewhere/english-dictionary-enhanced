@@ -10,4 +10,4 @@ This package uses the [en-wordnet](https://github.com/lifewhere/english-dictiona
 
 ## Quick Start
 
-You can
+You can install the package via `bun` or `npm` or `yarn`, along with one of t
