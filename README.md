@@ -10,4 +10,9 @@ This package uses the [en-wordnet](https://github.com/lifewhere/english-dictiona
 
 ## Quick Start
 
-You can install the package via `bun` or `npm` or `yarn`, along with one of t
+You can install the package via `bun` or `npm` or `yarn`, along with one of the wordnet databases:
+
+```
+bun init
+bun add -d @types/bun
+bun install english-dictiona
