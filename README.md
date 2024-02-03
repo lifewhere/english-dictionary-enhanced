@@ -15,4 +15,8 @@ You can install the package via `bun` or `npm` or `yarn`, along with one of the 
 ```
 bun init
 bun add -d @types/bun
-bun install english-dictiona
+bun install english-dictionary-enhanced
+vi index.ts
+```
+
+After adding it, you can initialize the dictionary, like
