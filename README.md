@@ -19,4 +19,8 @@ bun install english-dictionary-enhanced
 vi index.ts
 ```
 
-After adding it, you can initialize the dictionary, like
+After adding it, you can initialize the dictionary, like this:
+
+```js
+const wordnet = require("en-wordnet").default;
+import Dic
