@@ -23,4 +23,7 @@ After adding it, you can initialize the dictionary, like this:
 
 ```js
 const wordnet = require("en-wordnet").default;
-import Dic
+import Dictionary from "english-dictionary-enhanced";
+
+const start = async () => {
+    cons
