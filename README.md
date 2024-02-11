@@ -26,4 +26,5 @@ const wordnet = require("en-wordnet").default;
 import Dictionary from "english-dictionary-enhanced";
 
 const start = async () => {
-    cons
+    const dictionary = new Dictionary(wordnet.get("3.0"));
+    await dictionary.init()
