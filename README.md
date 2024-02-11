@@ -27,4 +27,7 @@ import Dictionary from "english-dictionary-enhanced";
 
 const start = async () => {
     const dictionary = new Dictionary(wordnet.get("3.0"));
-    await dictionary.init()
+    await dictionary.init();
+
+    let result = dictionary.searchFor(["yet"]);
+    console.log(result);
