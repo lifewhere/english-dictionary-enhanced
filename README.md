@@ -31,3 +31,6 @@ const start = async () => {
 
     let result = dictionary.searchFor(["yet"]);
     console.log(result);
+
+    result = dictionary.searchFor(["preposterous"]);
+    console.log(res
