@@ -42,4 +42,5 @@ const start = async () => {
     result = dictionary.wordsStartingWith("prestig");
     console.log(result)
 
- 
+    result = dictionary.wordsEndingWith("sterous");
+    console.log(result)
