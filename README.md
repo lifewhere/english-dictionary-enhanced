@@ -39,4 +39,7 @@ const start = async () => {
     result = dictionary.searchSimpleFor(["preposterous"]);
     console.log(result);
 
-    result =
+    result = dictionary.wordsStartingWith("prestig");
+    console.log(result)
+
+ 
