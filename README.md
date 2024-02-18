@@ -34,4 +34,6 @@ const start = async () => {
 
     result = dictionary.searchFor(["preposterous"]);
     console.log(result.get("preposterous").get("adjective"));
-    console.log(JSON.str
+    console.log(JSON.stringify(result.get("preposterous").get("adjective"), null, '\t'));
+
+    result = dict
