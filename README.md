@@ -44,3 +44,8 @@ const start = async () => {
 
     result = dictionary.wordsEndingWith("sterous");
     console.log(result)
+
+    result = dictionary.wordsIncluding("grating");
+    console.log(result);
+
+    result = di
