@@ -48,4 +48,7 @@ const start = async () => {
     result = dictionary.wordsIncluding("grating");
     console.log(result);
 
-    result = di
+    result = dictionary.wordsWithCharsIn("toaddndyrnrtssknwfsaregte");
+    console.log(result)
+
+ 
