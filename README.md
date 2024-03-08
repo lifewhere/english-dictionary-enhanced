@@ -62,3 +62,7 @@ export {}
 
 Get started!
 ```js
+bun run index.ts
+```
+
+There are some more [examples here](https://github.com/lifewhere/eng
