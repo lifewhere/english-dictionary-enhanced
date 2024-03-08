@@ -52,4 +52,13 @@ const start = async () => {
     console.log(result)
 
     result = dictionary.wordsUsingAllCharactersFrom("indonesia");
-    co
+    console.log(result);
+};
+
+await start()
+
+export {}
+```
+
+Get started!
+```js
