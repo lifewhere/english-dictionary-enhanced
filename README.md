@@ -51,4 +51,5 @@ const start = async () => {
     result = dictionary.wordsWithCharsIn("toaddndyrnrtssknwfsaregte");
     console.log(result)
 
- 
+    result = dictionary.wordsUsingAllCharactersFrom("indonesia");
+    co
