@@ -67,4 +67,4 @@ bun run index.ts
 
 There are some more [examples here](https://github.com/lifewhere/english-dictionary-enhanced/blob/master/src/index.test.ts).
 
-The dictionary may take about 2000ms to load the data into memory, it doesn't use an external data
+The dictionary may take about 2000ms to load the data into memory, it doesn't use an external database/redis yet (nor is that planned, since most queries are fast enough, and the 
