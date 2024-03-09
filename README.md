@@ -65,4 +65,6 @@ Get started!
 bun run index.ts
 ```
 
-There are some more [examples here](https://github.com/lifewhere/eng
+There are some more [examples here](https://github.com/lifewhere/english-dictionary-enhanced/blob/master/src/index.test.ts).
+
+The dictionary
