@@ -69,4 +69,9 @@ There are some more [examples here](https://github.com/lifewhere/english-diction
 
 The dictionary may take about 2000ms to load the data into memory, it doesn't use an external database/redis yet (nor is that planned, since most queries are fast enough, and the underlying data doesn't change probably more than once a year).
 
-As of ve
+As of version 1.2.0, most lookups are very fast:
+
+```txt
+bun test v1.1.3 (2615dc74)
+
+src/index.
