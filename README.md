@@ -74,4 +74,5 @@ As of version 1.2.0, most lookups are very fast:
 ```txt
 bun test v1.1.3 (2615dc74)
 
-src/index.
+src/index.test.ts:
+✓ Test the index file for English-Dictionary-Enhanced > Test in
