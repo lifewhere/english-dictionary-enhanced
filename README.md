@@ -75,4 +75,5 @@ As of version 1.2.0, most lookups are very fast:
 bun test v1.1.3 (2615dc74)
 
 src/index.test.ts:
-✓ Test the index file for English-Dictionary-Enhanced > Test in
+✓ Test the index file for English-Dictionary-Enhanced > Test initialization [4.28ms]
+✓ Test that all POS are indexed > searchFor(["smart"])
